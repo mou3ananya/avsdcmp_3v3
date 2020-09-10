@@ -29,7 +29,7 @@ The  Design Specifications of the Comparator IP can be found [here](/Documentati
 ### Block Diagram of the Comparator IP
 
  <p align="center">
-  <img width="850" height="550" src="/Images/NEW_C/block1.png">
+  <img width="850" height="550" src="/Images/comp_blk.PNG">
 </p>
 
 ### Internal Block Diagram of the Comparator IP
