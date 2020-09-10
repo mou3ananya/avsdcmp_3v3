@@ -24,7 +24,7 @@ Table of contents
 
 ## A Glance at the Comparator IP
 
-The  Design Specifications of the Comparator IP can be found [here](/Documentation/Specifications.pdf).
+The  Design Specifications of the Comparator IP can be found [here](/Documentations/specs.pdf).
 
 ### Block Diagram of the Comparator IP
 
