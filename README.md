@@ -141,13 +141,51 @@ To clone the Repository and download the Netlist files for Simulation, enter the
 
 ```
 $  sudo apt install -y git
-$  git clone https://github.com/ADC-TEAM2020/SAR_ADC
-$  cd SAR_ADC/Simulation/PreLayout_v1.0/
+$  git clone https://github.com/mou3ananya/ComparatorIP
+$  cd ComparatorIP/simulation/preLayout/
+```
+### Waveform Analysis of Comparator circuit 
+
+```
+Open the comparator.cir file. Here the difference between 2 i/p signals is 0.5mV. You can take any other combinations for i/p voltages also by entering the i/p signals as shown in the image below.
 ```
 
-<p align="center">
-  <img width="1200" height="600" src="/Images/transfer.png">
+ <p align="center">
+  <img width="750" height="100" src="/Images/input.PNG">
 </p>
+
+Run the netlist file using the following command.
+
+```
+$  ngspice comparator.cir
+```
+
+Observe the corresponding waveforms
+
+#### Inverting (v_n) and Non-inverting (v_p) i/p waveforms
+
+<p align="center">
+  <img width="1000" height="600" src="/Images/w_comp1">
+</p>
+
+#### En (Enable Active High) i/p waveform
+
+<p align="center">
+  <img width="1000" height="600" src="/Images/w_comp3">
+</p>
+
+#### Comparator o/p waveform
+
+<p align="center">
+  <img width="1000" height="600" src="/Images/w_comp2">
+</p>
+
+```
+When En='1'[3.3v], o/p[OUT] follows the Non-inverting i/p[v_p]  
+If En='0' then whole IP becomes off 
+During OFF state o/p remains at logic '0'
+
+```
 
 ### Pre-Layout Simulation result for each block
 
