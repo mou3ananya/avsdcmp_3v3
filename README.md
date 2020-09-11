@@ -266,4 +266,56 @@ This sub-block itself acts as a comparator.
 
 
 
+## Open-Source VLSI Tools
+
+
+<img align="left" width="60" height="50" src=/Images/ng_logo.PNG>
+
+## About Ngspice 
+Ngspice is an open source mixed-signal circuit simulator.
+
+### Installing Ngspice
+
+#### For Ubuntu
+
+Open your terminal and type the following to install Ngspice
+```
+$  sudo apt-get install -y ngspice
+```
+
+<img align="left" width="70" height="50" src=/Images/magic.png>
+
+
+
+
+## Contributors 
+
+- **Ananya Ghorai**
+- **Kunal Ghosh** 
+
+
+## Acknowledgments
+
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Philipp Gühring, Software Architect, LibreSilicon Assocation
+- Sheryl Serrao, Undergraduate Student, Mumbai University sherylcorina@gmail.com
+- Shalini Priya, M.Tech Embedded System, NIT Jamshedpur priyashalini161@gmail.com
+- Uday Vempalli, Undergraduate Student,Siddhartha Institute Of Technology,udayvempalli99@gmail.com
+
+
+## Contact Information
+
+- Ananya Ghorai, Pursuing M.Tech in VLSI Design, IIT(ISM) Dhanbad, ananyaghorai.2012@gmail.com
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+- Philipp Gühring, Software Architect, LibreSilicon Assocation pg@futureware.at
+
+
+
+
+
+
+
+
+
+
 
