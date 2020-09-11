@@ -57,6 +57,9 @@ The Comparator IP is built using 5 important sub-blocks:
 
 ## Circuit Diagram of the Comparator IP
 
+
+
+
  <p align="center">
   <img width="1200" height="500" src="/Images/comp_ckt.PNG">
 </p>
@@ -67,6 +70,9 @@ The Comparator IP is built using 5 important sub-blocks:
 
 
 ### Subcircuits within the Comparator IP
+
+
+
 
 <p align="center">
   <img width="850" height="550" src="/Images/NEW_C/cir_comp.png">
