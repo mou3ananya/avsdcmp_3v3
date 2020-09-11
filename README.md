@@ -91,6 +91,28 @@ The Comparator IP is built using 5 important circuit sub-components:
 <p align="center">
   <img width="850" height="550" src="/Images/blk_b3.PNG">
 </p>
+
+### Differential Pair with 2 i/ps applied to PMOS where the En is the o/p of the 1st differential single i/p block 
+
+<p align="center">
+  <img width="850" height="550" src="/Images/blk4.PNG">
+</p>
+
+<p align="center">
+  <img width="850" height="550" src="/Images/blk_b4.PNG">
+</p>
+
+### CMOS OR Logic block
+
+<p align="center">
+  <img width="850" height="550" src="/Images/blk4.PNG">
+</p>
+
+<p align="center">
+  <img width="850" height="550" src="/Images/blk_b4.PNG">
+</p>
+
+
 ## Running the Simulation
 
 
@@ -100,7 +122,7 @@ $ ngspice
 ```
 To simulate a netlist, type:
 ```
-ngspice 1 ->  source <filename>.cir
+ngspice 1 ->  <filename>.cir
 ```
 
 You can exit from the Ngspice Shell by typing:
