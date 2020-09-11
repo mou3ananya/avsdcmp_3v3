@@ -56,7 +56,7 @@ The Comparator IP is built using 5 important sub-blocks:
 
 
  <p align="center">
-  <img width="1200" height="500" src="/Images/comp_ckt.PNG">
+  <img width="1000" height="500" src="/Images/comp_ckt.PNG">
 </p>
 
 
