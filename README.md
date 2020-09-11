@@ -283,15 +283,12 @@ Open your terminal and type the following to install Ngspice
 $  sudo apt-get install -y ngspice
 ```
 
-<img align="left" width="70" height="50" src=/Images/magic.png>
-
-
 
 
 ## Contributors 
 
-**Ananya Ghorai**
-**Kunal Ghosh** 
+- **Ananya Ghorai**
+- **Kunal Ghosh** 
 
 
 ## Acknowledgments
