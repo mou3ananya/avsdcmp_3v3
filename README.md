@@ -105,11 +105,11 @@ The Comparator IP is built using 5 important circuit sub-components:
 ### CMOS OR Logic block
 
 <p align="center">
-  <img width="850" height="550" src="/Images/blk4.PNG">
+  <img width="850" height="550" src="/Images/blk5.PNG">
 </p>
 
 <p align="center">
-  <img width="850" height="550" src="/Images/blk_b4.PNG">
+  <img width="850" height="550" src="/Images/blk_b5.PNG">
 </p>
 
 
