@@ -37,7 +37,7 @@ The  Design Specifications of the Comparator IP can be found [here](/Documentati
 The Comparator IP is built using 3 sub-blocks:
 
  <p align="center">
-  <img width="900" height="550" src="/Images/block.png">
+  <img width="900" height="550" src="/Images/comp_int.PNG">
 </p>
 
 ## Circuit Diagram of the Comparator IP
