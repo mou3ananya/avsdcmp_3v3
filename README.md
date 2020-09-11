@@ -75,7 +75,7 @@ The Comparator IP is built using 5 important sub-blocks:
 ### CMOS Inverter block 
 
 <p align="center">
-  <img width="650" height="450" src="/Images/blk2.PNG">
+  <img width="350" height="550" src="/Images/blk2.PNG">
 </p>
 
 ## Running the Simulation
