@@ -290,17 +290,17 @@ $  sudo apt-get install -y ngspice
 
 ## Contributors 
 
-- **Ananya Ghorai**
-- **Kunal Ghosh** 
+**Ananya Ghorai**
+**Kunal Ghosh** 
 
 
 ## Acknowledgments
 
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 - Philipp Gühring, Software Architect, LibreSilicon Assocation
-- Sheryl Serrao, Undergraduate Student, Mumbai University sherylcorina@gmail.com
-- Shalini Priya, M.Tech Embedded System, NIT Jamshedpur priyashalini161@gmail.com
-- Uday Vempalli, Undergraduate Student,Siddhartha Institute Of Technology,udayvempalli99@gmail.com
+- Sheryl Serrao, Undergraduate Student, Mumbai University 
+- Shalini Priya, M.Tech Embedded System, NIT Jamshedpur 
+- Uday Vempalli, Undergraduate Student,Siddhartha Institute Of Technology
 
 
 ## Contact Information
