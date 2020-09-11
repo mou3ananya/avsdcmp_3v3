@@ -78,6 +78,11 @@ The Comparator IP is built using 5 important sub-blocks:
   <img width="350" height="550" src="/Images/blk2.PNG">
 </p>
 
+<p align="center">
+  <img width="850" height="550" src="/Images/blk_b2.PNG">
+</p>
+
+
 ## Running the Simulation
 
 
