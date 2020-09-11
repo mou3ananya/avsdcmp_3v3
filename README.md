@@ -69,7 +69,7 @@ The Comparator IP is built using 5 important sub-blocks:
 </p>
 
 <p align="center">
-  <img width="550" height="350" src="/Images/blk_b1.PNG">
+  <img width="850" height="550" src="/Images/blk_b1.PNG">
 </p>
 
 
