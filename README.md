@@ -36,7 +36,7 @@ The  Design Specifications of the Comparator IP can be found [here](/Documentati
 
 ### Internal Block Diagram of the Comparator IP
 
-The Comparator IP is built using 5 important sub-blocks:
+The Comparator IP is built using 5 important circuit sub-components:
 1. [Biasing Circuit](#biasing-circuit)
 2. [Differential Pair with level shifter where i/p is applied to NMOS](#differential-pair-with-level-shifter-where-i/p-is-applied-to-nmos)
 3. [Differential Pair with level shifter where i/p is applied to PMOS](#differential-pair-with-level-shifter-where-i/p-is-applied-to-pmos)
@@ -62,7 +62,7 @@ The Comparator IP is built using 5 important sub-blocks:
 
 ## Subcircuits within the Comparator IP
 
-### Differential Pair with En pin along with level shifter where i/p is applied to NMOS
+### Differential Pair with En pin and single i/p applied to NMOS
 
 <p align="center">
   <img width="850" height="550" src="/Images/blk1.PNG">
@@ -82,7 +82,15 @@ The Comparator IP is built using 5 important sub-blocks:
   <img width="850" height="550" src="/Images/blk_b2.PNG">
 </p>
 
+### Differential Pair with 2 i/ps applied to NMOS where the En is the o/p of the 1st differential single i/p block 
 
+<p align="center">
+  <img width="850" height="550" src="/Images/blk3.PNG">
+</p>
+
+<p align="center">
+  <img width="850" height="550" src="/Images/blk_b3.PNG">
+</p>
 ## Running the Simulation
 
 
