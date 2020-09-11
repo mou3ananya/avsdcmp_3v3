@@ -151,7 +151,7 @@ Open the comparator.cir file. Here the difference between 2 i/p signals is 0.5mV
 ```
 
  <p align="center">
-  <img width="750" height="100" src="/Images/input.PNG">
+  <img width="550" height="250" src="/Images/input.PNG">
 </p>
 
 Run the netlist file using the following command.
@@ -165,19 +165,19 @@ Observe the corresponding waveforms
 #### Inverting (v_n) and Non-inverting (v_p) i/p waveforms
 
 <p align="center">
-  <img width="1000" height="600" src="/Images/w_comp1">
+  <img width="1000" height="600" src="/Images/w_comp1.PNG">
 </p>
 
 #### En (Enable Active High) i/p waveform
 
 <p align="center">
-  <img width="1000" height="600" src="/Images/w_comp3">
+  <img width="1000" height="600" src="/Images/w_comp3.PNG">
 </p>
 
 #### Comparator o/p waveform
 
 <p align="center">
-  <img width="1000" height="600" src="/Images/w_comp2">
+  <img width="1000" height="600" src="/Images/w_comp2.PNG">
 </p>
 
 ```
