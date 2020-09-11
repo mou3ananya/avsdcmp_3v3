@@ -260,7 +260,7 @@ This sub-block itself acts as a comparator.
 6.So I've made the New comparator where in the differential block we'll apply the i/ps to the gate of PMOS  
 
 
-### Differential Pair with 2 i/ps applied to PMOS where the En is the o/p of the 1st differential single i/p block 
+ 
 
 
 
