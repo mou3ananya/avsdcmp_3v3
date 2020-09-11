@@ -1,0 +1,45 @@
+
+.include osu018.lib
+*****************************************
+
+************ComparatorHIGH***************
+
+.subckt comparatorN N001 N002 0 N006 N005 Vout
+M1 N003 N003 N001 N001 pfet l=200n w=2u m=1
+M2 N004 N003 N001 N001 pfet l=200n w=2u m=1
+M3 N003 N005 N008 0 nfet l=200n w=2u m=1
+M4 N004 N006 N008 0 nfet l=200n w=2u m=1
+M5 N009 N004 N001 N001 pfet l=200n w=6u m=1
+M6 N009 N007 0 0 nfet l=200n w=2u m=1
+M7 N008 N007 0 0 nfet l=200n w=2u m=1
+M8 N010 N009 N002 N002 pfet l=200n w=1u
+M9 Vout N010 N002 N002 pfet l=200n w=1u
+M10 N010 N009 0 0 nfet l=200n w=5u
+M11 Vout N010 0 0 nfet l=200n w=5u
+M13 N007 N007 0 0 nfet l=0.2u w=2u
+R N001 N007 50k
+.ends comparatorN
+
+*************************************
+
+X1 1 1d 0 v_p v_n Vout comparatorN
+
+*************************************
+
+Vd 1d 0 3.3v
+Vdda 1 0 pulse(3.3 0 1n 1n 1n 3u 6u)
+
+Vp v_p 0 pulse(1.006 1 1n 1n 1n 0.5u 1u)
+Vn v_n 0 pulse(1 1.006 1n 1n 1n 0.5u 1u)
+
+
+*************************************
+
+.tran 1ns 12us
+.control
+run
+plot V(Vout)+4 V(1) 
+plot V(v_p)+0.008 V(v_n) 
+ 
+.endc
+.end

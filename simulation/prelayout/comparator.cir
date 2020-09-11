@@ -1,0 +1,122 @@
+****comparator test*****
+
+X1 En 0 v_p v_n OUT comparator
+
+**********************************************
+
+.include osu018.lib
+
+*************ComparatorHIGH*******************
+
+.subckt comparatorN N001 N002 0 v_p v_n V_R Vout
+M1 N003 N003 N001 N001 pfet l=200n w=2u m=1
+M2 N004 N003 N001 N001 pfet l=200n w=2u m=1
+M3 N003 v_n N008 0 nfet l=200n w=2u m=1
+M4 N004 v_p N008 0 nfet l=200n w=2u m=1
+M5 N009 N004 N001 N001 pfet l=200n w=6u m=1
+M6 N009 V_R 0 0 nfet l=200n w=2u m=1
+M7 N008 V_R 0 0 nfet l=200n w=2u m=1
+M8 N010 N009 N002 N002 pfet l=200n w=2u
+M9 Vout N010 N002 N002 pfet l=200n w=2u
+M10 N010 N009 0 0 nfet l=200n w=1u
+M11 Vout N010 0 0 nfet l=200n w=1u
+*C1 Vout 0 1f
+*C2 N009 0 1f
+*M12 N007 clk N001 N001 pfet l=0.2u w=3u
+*I1 N001 N007 2u
+*R N001 N007 10k
+*M13 N007 N007 0 0 nfet l=0.2u w=2u
+.ends comparatorN
+
+
+****************ComparatorLOW*****************
+
+.subckt comparatorP N001 N002 0 v_p v_n V_R Vout
+ME1 N003 V_R N001 N001 pfet l=200n w=2u m=1
+*ME2 V_R V_R N001 N001 pfet l=200n w=2u m=1
+M1 N005 v_n N003 N001 pfet l=200n w=2u m=1
+M2 N006 v_p N003 N001 pfet l=200n w=2u m=1
+M3 N005 N005 0 0 nfet l=200n w=2u m=1
+M4 N006 N005 0 0 nfet l=200n w=2u m=1
+M5 N007 V_R N001 N001 pfet l=200n w=2u m=1
+M6 N007 N006 0 0 nfet l=200n w=6u m=1
+*M7 N008 N007 0 0 nfet l=200n w=2u m=1
+M8 N008 N007 N002 N002 pfet l=200n w=2u
+M9 Vout N008 N002 N002 pfet l=200n w=2u
+M10 N008 N007 0 0 nfet l=200n w=1u
+M11 Vout N008 0 0 nfet l=200n w=1u
+*R N004 0 10k
+.ends comparatorP
+
+
+***************INverter************************
+
+.subckt Inverter 1 0 in out
+M1 out in 1 1 pfet l=200n w=10u 
+M2 out in 0 0 nfet l=200n w=5u 
+.ends Inverter
+
+
+************OR*************************
+
+.subckt or 1d 0 v_a v_b out
+M1 N001 v_a 1d 1d pfet l=200n w=2u
+M2 bar v_b N001 1d pfet l=200n w=2u
+
+M3 bar v_a 0 0 nfet l=200n w=1u
+M4 bar v_b 0 0 nfet l=200n w=1u
+
+M5 out bar 1d 1d pfet l=200n w=2u
+M6 out bar 0 0 nfet l=200n w=1u
+.ends or
+
+****************Comparator********************
+
+.subckt comparator En 0 v_p v_n OUT
+XU1 En En 0 v_p V_R V_R comp comparatorN
+R En V_R 50k
+M1 V_R V_R 0 0 nfet l=0.2u w=10u
+XU2 En 0 comp comp_bar Inverter
+XU3 comp_bar En 0 v_p v_n V_R v_a comparatorP
+XU4 comp En 0 v_p v_n V_R v_b comparatorN
+XU5 En 0 v_a v_b OUT or
+.ends comparator
+
+************************************
+
+*************************************
+
+Vdd En 0 pulse(3.3 0 10n 1n 1n 8u 16u)
+
+
+Vp v_p 0 pulse(0.6 0.6005 1n 1n 1n 2u 4u)
+Vn v_n 0 pulse(0.6005 0.6 1n 1n 1n 2u 4u)
+
+
+*************************************
+
+.tran 1ns 20us
+.control
+run
+
+plot V(En)
+plot V(OUT) 
+plot V(v_p)+0.001 V(v_n)
+
+
+****************************************** 
+
+*plot V(X1.V_R)
+*plot V(v_p) V(v_n) V(X1.V_R)
+*plot V(X1.comp) V(X1.comp_bar) V(v_p) V(X1.V_R)
+*plot V(X1.comp) V(X1.v_a) V(X1.v_b) V(v_p) V(v_n)
+*plot V(X1.comp) V(out_p)+0.1 V(out_n)+0.1 V(v_p) V(v_n)
+
+********************************************
+
+.endc
+.end
+
+
+
+
