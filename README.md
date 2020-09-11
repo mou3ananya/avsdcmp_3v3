@@ -147,7 +147,8 @@ $  cd ComparatorIP/simulation/preLayout/
 ### Waveform Analysis of Comparator circuit 
 
 ```
-Open the comparator.cir file. Here the difference between 2 i/p signals is 0.5mV. You can take any other combinations for i/p voltages also by entering the i/p signals as shown in the image below.
+Open the comparator.cir file. Here the difference between 2 i/p signals which that IP can detect is 0.5mV. You can take any other combinations for i/p voltages also by entering the i/p signals as shown in the image below.
+
 ```
 
  <p align="center">
@@ -188,6 +189,79 @@ During OFF state o/p remains at logic '0'
 ```
 
 ### Pre-Layout Simulation result for each block
+
+### Differential Pair with 2 i/ps applied to NMOS where the En is the o/p of the 1st differential single i/p block 
+
+To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
+
+```
+$  sudo apt install -y git
+$  git clone https://github.com/mou3ananya/ComparatorIP
+$  cd ComparatorIP/simulation/preLayout/
+```
+```
+Open the compN.cir file. Here the difference between 2 i/p signals which that IP can detect is 6mV. You can take any other combinations for i/p voltages also by entering the i/p signals as shown in the image below.
+```
+
+ <p align="center">
+  <img width="550" height="250" src="/Images/inputN.PNG">
+</p>
+
+Run the netlist file using the following command.
+
+```
+$  ngspice compN.cir
+```
+
+Observe the corresponding waveforms
+
+#### Inverting (v_n) and Non-inverting (v_p) i/p waveforms
+
+<p align="center">
+  <img width="1000" height="600" src="/Images/w_compN.PNG">
+</p>
+
+#### En (Enable Active High) signal and o/p waveform
+
+<p align="center">
+  <img width="1000" height="600" src="/Images/w_compN1.PNG">
+</p>
+
+
+```
+This sub-block itself acts as a comparator. 
+```
+
+
+## Issues | Improvements
+
+ 
+1.  An important issue what we've met during simulation is the accuracy problem for the very small i/p voltage range i.e. for [0-0.4v] this range this comparator can't detect 
+   the very small difference between inverting and non-inverting i/p.
+   
+                    ```
+                    Ex. If we apply '0'v to one i/p and 0.2v to another then it can't detect this even 0.2v large gap also.
+                        If we even take 0.3v instead of 0.2v that will give the o/p but with a huge delay.
+                        But if we apply 1v and 1.2v, the comparator can generate right result. 
+                        Infact if we apply 1 and 1.006v then also it can produce the right o/p with very high accuracy.
+                    ```
+                    
+2. This lower range issue will create a huge problem for some other circuits also like for a good 10 bit SAR ADC we can't use this comparator specially in those circuits where   
+   the supply is very low.
+   
+3. So I've developed another comparator where we're feeding the i/ps at the PMOS part in place of NMOS. 
+
+4. Why I've taken this as a hope because the differential part is playing the major role in that issue. In that NMOS type comparator we're applying the i/ps to the gate terminal 
+   of NMOS of the differential pair and we know that the Vth for NMOS is [~0.2-0.3]. So for lower values of i/p which are below or near about this range that comparator can't 
+   operate in a right way.
+5. But if we apply those i/ps to the PMOS gate then this problem will not be there since the 
+                                Vth(PMOS) < Vth(NMOS)
+
+6.So I've made the New comparator where in the differential block we'll apply the i/ps to the gate of PMOS  
+
+
+### Differential Pair with 2 i/ps applied to PMOS where the En is the o/p of the 1st differential single i/p block 
+
 
 
 
