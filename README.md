@@ -52,12 +52,7 @@ The Comparator IP is built using 5 important sub-blocks:
 
 
 
-
-
-
 ## Circuit Diagram of the Comparator IP
-
-
 
 
  <p align="center">
@@ -65,17 +60,12 @@ The Comparator IP is built using 5 important sub-blocks:
 </p>
 
 
+## Subcircuits within the Comparator IP
 
-
-
-
-### Subcircuits within the Comparator IP
-
-
-
+### Differential Pair with En pin along with level shifter where i/p is applied to NMOS
 
 <p align="center">
-  <img width="850" height="550" src="/Images/NEW_C/cir_comp.png">
+  <img width="850" height="550" src="/Images/blk1.PNG">
 </p>
 
 ## Running the Simulation
