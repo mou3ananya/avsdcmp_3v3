@@ -56,7 +56,7 @@ The Comparator IP is built using 5 important circuit sub-components:
 |IBN|Bias current||0.05||mA|T=-40C to 85C|
 |Rise TPD|Rise propagation delay||1||ns|T=27C, IBN=0.05mA|
 |Fall TPD|Fall propagation delay||1.7||ns|T=27C, IBN=0.05mA|
-|CL|Load Capacitance||||pF||
+|CL|Load Capacitance||10||pF||
 |IDD|Supply current||||uA|T=27C,F=1kHz, EN=1, IBN=0.05mA|
 
 
