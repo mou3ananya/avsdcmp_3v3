@@ -33,7 +33,6 @@ The  Design Specifications of the Comparator IP can be found [here](/Documentati
 </p>
 
 
-
 ### Internal Block Diagram of the Comparator IP
 
 The Comparator IP is built using 5 important circuit sub-components:
@@ -42,9 +41,6 @@ The Comparator IP is built using 5 important circuit sub-components:
 3. Differential Pair with level shifter where i/p is applied to PMOS
 4. CMOS Inverter circuit
 5. CMOS OR Logic circuit
-
-
-
 
  <p align="center">
   <img width="900" height="550" src="/Images/comp_int.PNG">
@@ -62,7 +58,8 @@ The Comparator IP is built using 5 important circuit sub-components:
 
 ## Subcircuits within the Comparator IP
 
-### Differential Pair with En pin and single i/p applied to NMOS
+
+## Differential Pair with En pin and single i/p applied to NMOS
 
 <p align="center">
   <img width="850" height="550" src="/Images/blk1.PNG">
@@ -72,7 +69,8 @@ The Comparator IP is built using 5 important circuit sub-components:
   <img width="850" height="550" src="/Images/blk_b1.PNG">
 </p>
 
-### CMOS Inverter block 
+
+## CMOS Inverter block 
 
 <p align="center">
   <img width="350" height="550" src="/Images/blk2.PNG">
@@ -82,7 +80,8 @@ The Comparator IP is built using 5 important circuit sub-components:
   <img width="850" height="550" src="/Images/blk_b2.PNG">
 </p>
 
-### Differential Pair with 2 i/ps applied to NMOS where the En is the o/p of the 1st differential single i/p block 
+
+## Differential Pair with 2 i/ps applied to NMOS where the En is the o/p of the 1st differential single i/p block 
 
 <p align="center">
   <img width="850" height="550" src="/Images/blk3.PNG">
@@ -92,7 +91,8 @@ The Comparator IP is built using 5 important circuit sub-components:
   <img width="850" height="550" src="/Images/blk_b3.PNG">
 </p>
 
-### Differential Pair with 2 i/ps applied to PMOS where the En is the o/p of the 1st differential single i/p block 
+
+## Differential Pair with 2 i/ps applied to PMOS where the En is the o/p of the 1st differential single i/p block 
 
 <p align="center">
   <img width="850" height="550" src="/Images/blk4.PNG">
@@ -102,7 +102,8 @@ The Comparator IP is built using 5 important circuit sub-components:
   <img width="850" height="550" src="/Images/blk_b4.PNG">
 </p>
 
-### CMOS OR Logic block
+
+## CMOS OR Logic block
 
 <p align="center">
   <img width="850" height="550" src="/Images/blk5.PNG">
@@ -163,19 +164,19 @@ $  ngspice comparator.cir
 
 Observe the corresponding waveforms
 
-#### Inverting (v_n) and Non-inverting (v_p) i/p waveforms
+### Inverting (v_n) and Non-inverting (v_p) i/p waveforms
 
 <p align="center">
   <img width="1000" height="600" src="/Images/w_comp1.PNG">
 </p>
 
-#### En (Enable Active High) i/p waveform
+### En (Enable Active High) i/p waveform
 
 <p align="center">
   <img width="1000" height="600" src="/Images/w_comp3.PNG">
 </p>
 
-#### Comparator o/p waveform
+### Comparator o/p waveform
 
 <p align="center">
   <img width="1000" height="600" src="/Images/w_comp2.PNG">
@@ -188,9 +189,9 @@ During OFF state o/p remains at logic '0'
 
 ```
 
-### Pre-Layout Simulation result for each block
+## Pre-Layout Simulation result for each block
 
-### Differential Pair with 2 i/ps applied to NMOS where the En is the o/p of the single i/p differential block 
+## Differential Pair with 2 i/ps applied to NMOS where the En is the o/p of the single i/p differential block 
 
 To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
 
@@ -215,13 +216,13 @@ $  ngspice compN.cir
 
 Observe the corresponding waveforms
 
-#### Inverting (v_n) and Non-inverting (v_p) i/p waveforms
+### Inverting (v_n) and Non-inverting (v_p) i/p waveforms
 
 <p align="center">
   <img width="1000" height="600" src="/Images/w_compN.PNG">
 </p>
 
-#### En (Enable Active High) signal and o/p waveform
+### En (Enable Active High) signal and o/p waveform
 
 <p align="center">
   <img width="1000" height="600" src="/Images/w_compN1.PNG">
@@ -239,12 +240,12 @@ This sub-block itself acts as a comparator.
 1.  An important issue what I've met during simulation is the accuracy problem for the very small i/p voltage range i.e. for [0-0.4v] this range this comparator can't detect 
    the very small difference between inverting and non-inverting i/p.
    
-                    ```
+ ```
                     Ex. If we apply '0'v to one i/p and 0.2v to another then it can't detect this even 0.2v large gap also.
                         If we even take 0.3v instead of 0.2v that will give the o/p but with a huge delay.
                         But if we apply 1v and 1.2v, the comparator can generate right result. 
                         Infact if we apply 1 and 1.006v then also it can produce the right o/p with very high accuracy.
-                    ```
+ ```
                     
 2. This lower range issue will create a huge problem for some other circuits also like for a good 10 bit SAR ADC we can't use this comparator specially in those circuits where   
    the supply is very low.
@@ -260,7 +261,7 @@ This sub-block itself acts as a comparator.
 6.So I've made the New comparator where in the differential block we'll apply the i/ps to the gate of PMOS  
 
 
- ### Differential Pair with 2 i/ps applied to PMOS where the En is the o/p of the single i/p differential block 
+ ## Differential Pair with 2 i/ps applied to PMOS where the En is the o/p of the single i/p differential block 
 
 To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
 
@@ -288,13 +289,13 @@ $  ngspice compP.cir
 
 Observe the corresponding waveforms
 
-#### Inverting (v_n) and Non-inverting (v_p) i/p waveforms
+### Inverting (v_n) and Non-inverting (v_p) i/p waveforms
 
 <p align="center">
   <img width="1000" height="600" src="/Images/w_compP.PNG">
 </p>
 
-#### En (Enable Active High) signal and o/p waveform
+### En (Enable Active High) signal and o/p waveform
 
 <p align="center">
   <img width="1000" height="600" src="/Images/w_compP1.PNG">
@@ -312,22 +313,107 @@ This sub-block itself acts as a comparator.
 1.  An important issue what I've met during simulation is the accuracy problem for the large i/p voltage range i.e. for [ > 2v] this range that comparator can't detect 
    the very small difference between inverting and non-inverting i/p.
    
-                    ```
+ ```
                     Ex. If we apply 3v to one i/p and 3.08v to another then it can't detect this even 80mv large gap also.
                         But if we apply 0v and 0.08v, the comparator can generate right result that means it can detect that 80mv difference only when the applied i/p signal 
                         value is in very small range.
-                    ```
+ ```
                     
 2. This higher range issue will create a huge problem for some other circuits also for an example in a good 10 bit SAR ADC we can't use this comparator specially in those circuits where the supply is large enogh.  
     
 3. So I've developed the final comparator shown in the 1st section of this repository where I've merged both the above mentioned comparators with some other circuitry where I've 
    managed the below functional logic:     
    
-           ```
+```
            If i/p voltage range is < 0.5v then PMOS type comparator will be active
                                    > 0.5v then NMOS type comparator will be active
-           ```
+```                                   
            
+
+## CMOS Inverter block 
+To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
+
+```
+$  sudo apt install -y git
+$  git clone https://github.com/mou3ananya/ComparatorIP
+$  cd ComparatorIP/simulation/preLayout/
+```
+
+
+```
+Open the inverter.cir file.You can take any other values for i/p voltage by entering the i/p signal as shown in the image below.
+
+```
+
+ <p align="center">
+  <img width="550" height="250" src="/Images/inputINV.PNG">
+</p>
+
+Run the netlist file using the following command.
+
+```
+$  ngspice inverter.cir
+```
+
+Observe the corresponding waveform
+
+### i/p - o/p waveforms
+
+<p align="center">
+  <img width="1000" height="600" src="/Images/w_inverter.PNG">
+</p>
+
+
+## CMOS OR Logic block
+To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
+
+```
+$  sudo apt install -y git
+$  git clone https://github.com/mou3ananya/ComparatorIP
+$  cd ComparatorIP/simulation/preLayout/
+```
+
+
+```
+Open the OR.cir file.You can take any other combinations for i/p voltages by entering the i/p signals as shown in the image below.
+
+```
+
+ <p align="center">
+  <img width="550" height="250" src="/Images/inputOR.PNG">
+</p>
+
+Run the netlist file using the following command.
+
+```
+$  ngspice OR.cir
+```
+
+Observe the corresponding waveform
+
+### i/p - o/p waveforms
+
+<p align="center">
+  <img width="1000" height="600" src="/Images/w_or.PNG">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Open-Source VLSI Tools
 
