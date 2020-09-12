@@ -37,11 +37,11 @@ The  Design Specifications of the Comparator IP can be found [here](/Documentati
 ### Internal Block Diagram of the Comparator IP
 
 The Comparator IP is built using 5 important circuit sub-components:
-1. [Biasing Circuit](#biasing-circuit)
-2. [Differential Pair with level shifter where i/p is applied to NMOS](#differential-pair-with-level-shifter-where-i/p-is-applied-to-nmos)
-3. [Differential Pair with level shifter where i/p is applied to PMOS](#differential-pair-with-level-shifter-where-i/p-is-applied-to-pmos)
-4. [CMOS Inverter circuit](#cmos-inverter-circuit)
-5. [CMOS OR Logic circuit](#cmos-or-logic-circuit)
+1. Biasing Circuit
+2. Differential Pair with level shifter where i/p is applied to NMOS
+3. Differential Pair with level shifter where i/p is applied to PMOS
+4. CMOS Inverter circuit
+5. CMOS OR Logic circuit
 
 
 
