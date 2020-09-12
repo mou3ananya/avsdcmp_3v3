@@ -1,0 +1,46 @@
+****ADDER_OR*****
+
+X1 1d 0 v_a v_b OUT or
+
+*****************************************
+.include osu018.lib
+******************************************
+
+************OR*************************
+
+.subckt or 1d 0 v_a v_b OUT
+M1 N001 v_a 1d 1d pfet l=200n w=2u
+M2 bar v_b N001 1d pfet l=200n w=2u
+
+M3 bar v_a 0 0 nfet l=200n w=1u
+M4 bar v_b 0 0 nfet l=200n w=1u
+
+M5 OUT bar 1d 1d pfet l=200n w=2u
+M6 OUT bar 0 0 nfet l=200n w=1u
+.ends or
+
+
+************************************
+
+*************************************
+
+Vdd 1d 0 3.3v
+
+Va v_a 0 pulse(3.3 0 1n 1n 1n 1u 2u)
+Vb v_b 0 0
+
+
+*************************************
+
+.tran 1ns 6us
+.control
+run
+
+plot V(OUT)+4 V(v_a)+0.5 V(v_b)
+
+.endc
+.end
+
+
+
+

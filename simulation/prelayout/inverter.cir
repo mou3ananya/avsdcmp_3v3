@@ -1,0 +1,35 @@
+****Inverter_test*****
+
+X1 1 0 in out Inverter
+
+*****************************************
+
+.include osu018.lib
+
+******************************************
+
+.subckt Inverter 1 0 in out
+M1 out in 1 1 pfet l=200n w=10u 
+M2 out in 0 0 nfet l=200n w=5u 
+.ends Inverter
+
+********************
+
+Va 1 0 3.3v
+
+
+Vin in 0 pulse(0 3.3 1n 1n 1n 1u 2u)
+
+*************************************
+.tran 1ns 6us
+.control
+
+run
+plot V(out)+4 V(in)
+
+.endc
+.end
+
+
+
+
