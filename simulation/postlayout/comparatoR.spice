@@ -1,0 +1,238 @@
+* SPICE3 file created from comparatoR.ext - technology: scmos
+
+.option scale=0.1u
+
+M1000 0 a_70_89# a_94_107# 0 nfet w=10 l=2
++  ad=2910 pd=1002 as=60 ps=32
+M1001 a_n53_n56# INN a_n61_n89# 0 nfet w=20 l=2
++  ad=160 pd=56 as=480 ps=168
+M1002 a_n328_5# a_n328_5# 0 0 nfet w=100 l=2
++  ad=872 pd=252 as=0 ps=0
+R0 a_n328_141# a_n306_141# nwellResistor w=12 l=130
+M1003 a_n173_45# a_n196_78# En En pfet w=20 l=2
++  ad=160 pd=56 as=2140 ps=732
+M1004 a_n41_34# a_n41_34# 0 0 nfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+M1005 a_n157_n22# a_n173_45# En En pfet w=60 l=2
++  ad=480 pd=136 as=0 ps=0
+R1 a_n328_5# a_n328_141# nwellResistor w=12 l=130
+R2 a_n306_141# a_n284_139# nwellResistor w=12 l=130
+M1006 a_101_107# a_64_n5# a_94_107# En pfet w=40 l=2
++  ad=120 pd=86 as=200 ps=90
+M1007 a_n120_50# a_n157_n22# 0 0 nfet w=10 l=2
++  ad=80 pd=36 as=0 ps=0
+M1008 a_64_n5# a_43_n5# 0 0 nfet w=10 l=2
++  ad=80 pd=36 as=0 ps=0
+M1009 a_n173_45# INP a_n204_45# 0 nfet w=20 l=2
++  ad=160 pd=56 as=480 ps=168
+M1010 a_64_n5# a_43_n5# En En pfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+M1011 a_n41_34# INN a_n49_69# w_n58_63# pfet w=20 l=2
++  ad=160 pd=56 as=480 ps=168
+R3 a_n284_139# a_n262_141# nwellResistor w=12 l=130
+M1012 En a_70_89# a_101_107# En pfet w=40 l=2
++  ad=0 pd=0 as=0 ps=0
+M1013 a_12_37# a_n18_37# 0 0 nfet w=60 l=2
++  ad=480 pd=136 as=0 ps=0
+M1014 a_70_89# a_49_89# 0 0 nfet w=10 l=2
++  ad=80 pd=36 as=0 ps=0
+M1015 OUT a_94_107# 0 0 nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1016 a_n30_n89# a_n53_n56# w_n67_n56# w_n67_n56# pfet w=20 l=2
++  ad=160 pd=56 as=960 ps=304
+M1017 a_n157_n22# a_n328_5# 0 0 nfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+M1018 a_n120_50# a_n157_n22# En En pfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+M1019 a_12_37# a_n328_5# w_n58_63# w_n58_63# pfet w=20 l=2
++  ad=160 pd=56 as=480 ps=168
+M1020 w_n58_63# w_n67_n56# 0 0 nfet w=10 l=2
++  ad=208 pd=164 as=0 ps=0
+M1021 a_n18_37# a_n41_34# 0 0 nfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+M1022 a_n53_n56# a_n53_n56# w_n67_n56# w_n67_n56# pfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+M1023 a_49_89# a_12_37# En En pfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+M1024 a_n204_45# a_n328_5# 0 0 nfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1025 a_43_n5# a_n14_n146# 0 0 nfet w=10 l=2
++  ad=80 pd=36 as=0 ps=0
+M1026 w_n67_n56# a_n120_50# 0 0 nfet w=10 l=2
++  ad=224 pd=180 as=0 ps=0
+M1027 a_n14_n146# a_n30_n89# w_n67_n56# w_n67_n56# pfet w=60 l=2
++  ad=480 pd=136 as=0 ps=0
+M1028 a_43_n5# a_n14_n146# En En pfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+R4 a_n262_141# En nwellResistor w=12 l=130
+M1029 a_n18_37# INP a_n49_69# w_n58_63# pfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+M1030 a_n14_n146# a_n328_5# 0 0 nfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+M1031 a_n49_69# a_n328_5# w_n58_63# w_n58_63# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1032 a_70_89# a_49_89# En En pfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+M1033 a_49_89# a_12_37# 0 0 nfet w=10 l=2
++  ad=80 pd=36 as=0 ps=0
+M1034 a_94_107# a_64_n5# 0 0 nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1035 w_n58_63# w_n67_n56# En En pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1036 a_n196_78# a_n196_78# En En pfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+M1037 w_n67_n56# a_n120_50# En En pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1038 a_n30_n89# INP a_n61_n89# 0 nfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+M1039 a_n61_n89# a_n328_5# 0 0 nfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1040 OUT a_94_107# En En pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1041 a_n196_78# a_n328_5# a_n204_45# 0 nfet w=20 l=2
++  ad=160 pd=56 as=0 ps=0
+C0 w_n58_63# a_n328_5# 0.87fF
+*C1 a_n262_141# a_n241_4# 0.01fF
+C2 a_n41_34# INN 0.02fF
+*C3 a_n329_4# a_n328_5# 0.01fF
+C4 a_n18_37# w_n58_63# 0.13fF
+C5 INP w_n67_n56# 0.38fF
+C6 INP a_n328_5# 0.07fF
+C7 a_n14_n146# a_n30_n89# 0.14fF
+C8 a_n157_n22# En 0.27fF
+C9 a_n196_78# a_n328_5# 0.07fF
+C10 a_n284_139# a_n328_5# 0.06fF
+C11 a_n49_69# w_n58_63# 0.18fF
+C12 INP a_n18_37# 0.03fF
+C13 a_n30_n89# w_n67_n56# 0.18fF
+C14 a_70_89# En 0.13fF
+C15 a_64_n5# En 0.21fF
+C16 a_n120_50# En 0.28fF
+C17 a_n306_141# a_n328_5# 0.06fF
+C18 a_n173_45# a_n328_5# 0.04fF
+C19 a_12_37# w_n58_63# 0.03fF
+C20 a_n262_141# En 0.16fF
+C21 INP a_n49_69# 0.20fF
+C22 INP a_n61_n89# 0.02fF
+C23 INN a_n53_n56# 0.22fF
+C24 a_n157_n22# a_n120_50# 0.03fF
+*C25 a_n285_2# a_n284_139# 0.01fF
+C26 a_n14_n146# w_n67_n56# 0.15fF
+C27 a_43_n5# En 0.29fF
+C28 a_70_89# a_64_n5# 0.24fF
+*C29 a_n306_141# a_n285_2# 0.01fF
+C30 a_n41_34# w_n58_63# 0.03fF
+C31 a_n14_n146# a_n328_5# 0.05fF
+*C32 a_n262_141# a_n263_4# 0.01fF
+C33 a_12_37# a_49_89# 0.03fF
+C34 w_n67_n56# a_n328_5# 0.03fF
+C35 En w_n58_63# 0.61fF
+*C36 a_n328_141# a_n307_4# 0.01fF
+C37 a_n41_34# INP 0.23fF
+*C38 a_n329_4# a_n328_141# 0.01fF
+C39 a_n18_37# a_n328_5# 0.01fF
+C40 INN w_n58_63# 0.20fF
+C41 a_43_n5# a_64_n5# 0.03fF
+C42 OUT a_94_107# 0.36fF
+C43 a_n196_78# En 0.49fF
+C44 a_n61_n89# a_n328_5# 0.60fF
+C45 INP INN 0.07fF
+C46 a_n173_45# En 0.18fF
+C47 a_49_89# En 0.30fF
+C48 a_n306_141# a_n328_141# 0.33fF
+C49 a_n157_n22# INP 0.10fF
+C50 a_n18_37# a_12_37# 0.05fF
+C51 INP a_n120_50# 0.07fF
+C52 INP a_n53_n56# 0.16fF
+C53 a_n157_n22# a_n173_45# 0.14fF
+*C54 a_n263_4# a_n284_139# 0.01fF
+C55 a_n14_n146# En 0.08fF
+C56 a_70_89# a_49_89# 0.03fF
+C57 a_n262_141# a_n284_139# 0.30fF
+C58 a_n30_n89# a_n53_n56# 0.05fF
+C59 OUT En 0.41fF
+C60 En w_n67_n56# 0.28fF
+C61 a_n41_34# a_n18_37# 0.05fF
+C62 En a_n328_5# 0.26fF
+C63 a_n328_141# a_n328_5# 0.23fF
+C64 a_n204_45# INP 0.06fF
+C65 INN w_n67_n56# 0.12fF
+C66 INN a_n328_5# 0.01fF
+C67 INP w_n58_63# 0.41fF
+C68 a_n204_45# a_n196_78# 0.16fF
+C69 a_n41_34# a_n49_69# 0.24fF
+C70 a_n157_n22# a_n328_5# 0.14fF
+C71 a_n120_50# w_n67_n56# 0.03fF
+C72 a_94_107# En 0.45fF
+C73 a_n53_n56# w_n67_n56# 0.49fF
+*C74 a_n306_141# a_n307_4# 0.01fF
+C75 a_n120_50# a_n328_5# 0.03fF
+*C76 a_n241_4# En 0.01fF
+C77 a_12_37# En 0.73fF
+C78 a_n262_141# a_n328_5# 0.12fF
+C79 a_n196_78# INP 0.19fF
+C80 INN a_n49_69# 0.00fF
+C81 INN a_n61_n89# 0.13fF
+C82 a_n14_n146# a_43_n5# 0.03fF
+C83 INP a_n173_45# 0.09fF
+C84 INP a_n30_n89# 0.08fF
+C85 a_70_89# a_94_107# 0.33fF
+C86 a_n196_78# a_n173_45# 0.05fF
+C87 a_94_107# a_64_n5# 0.05fF
+C88 a_n306_141# a_n284_139# 0.30fF
+C89 a_n53_n56# a_n61_n89# 0.16fF
+C90 a_n204_45# a_n328_5# 0.35fF
+C91 w_n58_63# w_n67_n56# 0.07fF
+C92 a_n61_n89# 0 0.53fF
+C93 a_n53_n56# 0 0.09fF
+C94 a_n30_n89# 0 0.11fF
+C95 a_43_n5# 0 0.42fF
+C96 a_n14_n146# 0 0.68fF
+C97 a_n41_34# 0 0.49fF
+C98 a_n204_45# 0 0.54fF
+C99 OUT 0 0.24fF
+C100 a_n18_37# 0 0.26fF
+C101 INN 0 0.68fF
+C102 INP 0 0.48fF
+C103 a_n120_50# 0 0.42fF
+C104 a_49_89# 0 0.44fF
+C105 a_12_37# 0 0.32fF
+C106 a_n157_n22# 0 0.64fF
+C107 a_n196_78# 0 0.09fF
+C108 a_94_107# 0 0.63fF
+C109 a_70_89# 0 0.57fF
+C110 a_64_n5# 0 0.77fF
+C111 a_n173_45# 0 0.11fF
+C112 a_n262_141# 0 0.81fF
+C113 a_n284_139# 0 0.80fF
+C114 a_n306_141# 0 0.80fF
+C115 a_n328_5# 0 3.24fF
+C116 a_n328_141# 0 0.81fF
+C117 w_n67_n56# 0 5.92fF
+C118 w_n58_63# 0 4.68fF
+C119 En 0 15.09fF
+
+
+
+.include osu018.lib
+.model nwellResistor R (RSH=929)
+
+
+VDDA En 0 pulse(3.3 0 10n 1n 1n 8u 16u)
+
+
+
+Vp INP 0 pulse(0.6 0.608 1n 1n 1n 2u 4u)
+Vn INN 0 pulse(0.608 0.6 1n 1n 1n 2u 4u) 
+
+
+
+.tran 1n 20u
+.control
+run 
+ 
+plot V(OUT)+4 V(En)
+plot V(INP)+0.01 V(INN)
+
+.endc
+.end
