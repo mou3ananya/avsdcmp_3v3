@@ -1,4 +1,4 @@
-# ComparatorIP
+# vsdcomparator
 This repository contains a structural as well as functional description of a comparator with 3.3v analog voltage. This repository will maintain simulation files and other relevant files on the pre-mentioned design block worked on in the Online VSD IP Design Research Internship program 2020.
 
 *Note: Circuit requires further optimization to improve performance. Design yet to be modified.*
