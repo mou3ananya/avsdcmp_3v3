@@ -134,6 +134,19 @@ The Comparator IP is built using 5 important circuit sub-components:
 </p>
 
 
+## A list of transistor dimention I've used 
+
+|     Transistor    |   W (um)  |   L (um)  |
+| :---:  | :-: | :-: |
+|   M5, M21, M31   |   6   |   0.2   |
+|M1,M2,M3,M4,M6,M7,M8,M9,M11,M13,M15,M16,M17,M18,M19,M20,M22,M24,M26,M27,M28,M29,M30,M32,M33,M35,M37,M38,M41|   2   |   0.2   |
+|  M10, M12, M14, M23, M25, M34, M36, M39, M40, M42  |   1   |   0.2   |
+
+```
+You can take w=10u for M13 and w=5u for M14 also, performance will not be affected that much here. I've changed those according to the above list to meet the dimension spec.
+```
+
+
 ## Running the Simulation
 
 
