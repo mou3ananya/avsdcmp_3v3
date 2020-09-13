@@ -17,7 +17,12 @@ Table of contents
         * [Pre-Layout Simulation result for each block](#pre-layout-simulation-result-for-each-block)
    * [Layout](#layout)
       * [Layout of Complete Comparator](#layout-of-complete-comparator)
-      * [Post-Layout Simulation](#post-layout-simulation)
+      * [Layout of Inverter Block](#layout-of-inverter-block)
+      * [Layout of CMOS OR Logic Block](#layout-of-cmos-or-logic-block)
+      * [Layout of Differential Pair with En pin and single i/p applied to NMOS along with biasing circuit](#layout-of-differential-pair-with-en-pin-and-single-i/p-applied-to-nmos-along-with-biasing-circuit)
+      * [Layout of Differential Pair with 2 i/ps applied to NMOS where the En is the o/p of the single i/p differential block](#layout-of-differential-pair-with-2-i/ps-applied-to-nmos-where-the-en-is-the-o/p-of-the-single-i/p-differential-block)
+      * [Layout of Differential Pair with 2 i/ps applied to PMOS where the En is the o/p of the single i/p differential block](#layout-of-differential-pair-with-2-i/ps-applied-to-pmos-where-the-en-is-the-o/p-of-the-single-i/p-differential-block)
+   * [Post-Layout Simulation of Complete Comparator IP](#post-layout-simulation-of-complete-comparator-ip)
    * [Issues | Improvements | Future Work](#issues--improvements--future-work)
    * [Open-Source VLSI Tools](#open-source-vlsi-tools)
        * [About Ngspice](#about-ngspice)
@@ -415,10 +420,35 @@ Observe the corresponding waveform
 
 ## Layout
 
-### Layout of Comparator IP
+### Layout of Complete Comparator IP
 
  <p align="center">
   <img width="1200" height="600" src="/Images/comp_lay.PNG">
+</p>
+
+
+### Layout of Inverter Block
+
+ <p align="center">
+  <img width="550" height="950" src="/Images/blk2_L.PNG">
+</p>
+
+
+### Layout of CMOS OR Logic Block
+ <p align="center">
+  <img width="1200" height="600" src="/Images/blk3_L.PNG">
+</p>
+
+
+### Layout of Differential Pair with En pin and single i/p applied to NMOS along with biasing circuit
+ <p align="center">
+  <img width="1200" height="600" src="/Images/blk4_L.PNG">
+</p>
+
+
+### Layout of Differential Pair with En pin and single i/p applied to PMOS along with biasing circuit
+ <p align="center">
+  <img width="1200" height="600" src="/Images/blk5_L.PNG">
 </p>
 
 
