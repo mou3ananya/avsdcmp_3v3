@@ -410,9 +410,57 @@ Observe the corresponding waveform
 </p>
 
 
+## Layout
+
+### Layout of Comparator IP
+
+ <p align="center">
+  <img width="1200" height="600" src="/Images/comp_lay.PNG">
+</p>
+
+
+### Post Layout Simulation
+
+To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
+
+```
+$  sudo apt install -y git
+$  git clone https://github.com/mou3ananya/ComparatorIP
+$  cd ComparatorIP/simulation/postlayout/
+```
+
+Open the mag file using the following command to get the layout.
+
+
+```
+$  magic -T SCN6M_SUBM.10.tech comparatoR.mag
+```
+
+
+Open the comparatoR.spice file.You can take any other combinations for i/p voltages by entering the i/p signals as shown in the image below.
+
+
+ <p align="center">
+  <img width="550" height="250" src="/Images/inputL.PNG">
+</p>
+
+Run the netlist file using the following command.
+
+```
+$  ngspice comparatoR.spice
+```
+
+Observe the corresponding waveforms
+
+<p align="center">
+  <img width="1000" height="600" src="/Images/w_compL1.PNG">
+</p>
 
 
 
+<p align="center">
+  <img width="1000" height="600" src="/Images/w_compL2.PNG">
+</p>
 
 
 
@@ -430,7 +478,7 @@ Observe the corresponding waveform
 ## Open-Source VLSI Tools
 
 
-<img align="left" width="60" height="50" src=/Images/ng_logo.PNG>
+<img align="left" width="60" height="50" src=/Images/ng_logo.png>
 
 ## About Ngspice 
 Ngspice is an open source mixed-signal circuit simulator.
@@ -444,6 +492,21 @@ Open your terminal and type the following to install Ngspice
 $  sudo apt-get install -y ngspice
 ```
 
+<img align="left" width="70" height="50" src=/Images/magic.png>
+
+## Magic
+ 
+ Magic is a VLSI layout tool. 
+
+Type the following to install Magic in Ubuntu
+```
+$  wget http://opencircuitdesign.com/magic/archive/magic-8.3.54.tgz
+$  tar xvfz magic-8.3.54.tgz
+$  cd magic-8.3.54
+$  ./configure
+$  sudo make
+$  sudo make install
+```
 
 
 ## Contributors 
