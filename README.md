@@ -15,6 +15,9 @@ Table of contents
    * [Running the Simulation](#running-the-simulation)
    * [Pre-Layout Simulation result](#pre-layout-simulation-result)Pre-Layout Simulation result for each block
         * [Pre-Layout Simulation result for each block](#pre-layout-simulation-result-for-each-block)
+   * [Layout](#layout)
+      * [Layout of Complete Comparator](#layout-of-complete-comparator)
+      * [Post-Layout Simulation](#post-layout-simulation)
    * [Issues | Improvements | Future Work](#issues--improvements--future-work)
    * [Open-Source VLSI Tools](#open-source-vlsi-tools)
        * [About Ngspice](#about-ngspice)
@@ -478,7 +481,7 @@ Observe the corresponding waveforms
 ## Open-Source VLSI Tools
 
 
-<img align="left" width="60" height="50" src=/Images/ng_logo.png>
+<img align="left" width="60" height="50" src=/Images/ng_logo.PNG>
 
 ## About Ngspice 
 Ngspice is an open source mixed-signal circuit simulator.
@@ -492,7 +495,7 @@ Open your terminal and type the following to install Ngspice
 $  sudo apt-get install -y ngspice
 ```
 
-<img align="left" width="70" height="50" src=/Images/magic.png>
+<img align="left" width="70" height="50" src=/Images/magic.PNG>
 
 ## Magic
  
