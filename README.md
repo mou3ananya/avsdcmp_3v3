@@ -445,13 +445,13 @@ Observe the corresponding waveform
 ### Layout of Inverter Block
 
  <p align="center">
-  <img width="550" height="950" src="/Images/blk2_L.PNG">
+  <img width="350" height="650" src="/Images/blk2_L.PNG">
 </p>
 
 
 ### Layout of CMOS OR Logic Block
  <p align="center">
-  <img width="1200" height="600" src="/Images/blk3_L.PNG">
+  <img width="550" height="850" src="/Images/blk3_L.PNG">
 </p>
 
 
