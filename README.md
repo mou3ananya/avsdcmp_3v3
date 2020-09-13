@@ -556,6 +556,11 @@ $  sudo make
 $  sudo make install
 ```
 
+## Issues | Improvements | Future Work
+1. After layout the precision is not that high as in the case of prelayout. I've to take care of the layout part to get the more accuracy in operation.
+2. I've designed this comparator for a fixed bias current and for that biasing purpose I've used 50k resistor. I'll try to replace that by a small resistor to reduce the power 
+   consumption of the circuit as well as to increase the speed of response.
+   
 
 ## Contributors 
 
