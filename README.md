@@ -570,7 +570,7 @@ $  sudo make install
 
 ## Acknowledgments
 
-- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
 - Philipp Gühring, Software Architect, LibreSilicon Assocation
 - Sheryl Serrao, Undergraduate Student, Mumbai University 
 - Shalini Priya, M.Tech Embedded System, NIT Jamshedpur 
@@ -580,7 +580,7 @@ $  sudo make install
 ## Contact Information
 
 - Ananya Ghorai, Pursuing M.Tech in VLSI Design, IIT(ISM) Dhanbad, ananyaghorai.2012@gmail.com
-- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+- Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
 - Philipp Gühring, Software Architect, LibreSilicon Assocation pg@futureware.at
 
 
